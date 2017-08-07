@@ -1,0 +1,197 @@
+
+        <!-- Header Section Starts Here -->
+        <div class="home bg-img-3 home-product" id="home">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    {{header-navigation}}
+                </div>
+                {{hero-header}}
+            </div>
+        </div>
+        <!-- Header Section Ends Here -->
+
+        <!-- Redefine Section Starts Here -->
+        <div id="about" class="padd">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-5 text-center hidden-md hidden-sm hidden-lg">
+                        <h1 class="">Redefining the web</h1>
+                    </div>
+                    <div class="col-xs-4 col-xs-offset-4 col-sm-6 col-md-5 padding-0">
+                        <img src="images/layers.png" class="img-responsive center-block margintop-20" alt="" title=""/>  
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-7">
+                        <h1 class="hidden-xs">Redefining the web</h1>
+                        <p class="redefine-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque placerat lorem, eu feugiat leo. Nam non viverra quam. Nulla sollicitudin neque a urna dapibus interdum. Proin placerat porta ante sed molestie. Proin lobortis pellentesque ante.
+                        </p>
+                        <p class="redefine-text">
+                            Maecenas scelerisque, est id congue lobortis, leo diam dapibus libero, sed eleifend leo massa luctus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <a href="#" class="btn btn-rnd margintop-12 hidden-xs">Learn more</a>
+                        <div class="hidden-sm hidden-md hidden-lg text-center"><a href="#" class="btn btn-rnd margin-top-20">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Redefine Section Ends Here -->
+
+
+
+
+        <!-- Services Section Starts Here -->
+        <div class="padd-80 bg-gray" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <h1>Services</h1>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                <p class="sub-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                
+                {{#each model as |service|}}
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-center service-item">
+                        <img src="{{service.img}}" class="center-block" alt="" title="" />
+                        <h4>{{service.name}}</h4>
+                        <p>{{service.description}}</p>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
+        <!-- Services Section Ends Here -->
+
+        <!-- Team Section Starts Here -->
+        <div id="reviews">
+            <div class="container">
+                <div class="container wrapper-h-xs-lg">
+                    <div class="row section-title text-center">
+                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                            <h1>Our Team</h1>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                                    <p class="sub-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="col-xs-12 col-sm-3 col-md-3 text-center member">
+                                <img src="images/riffraff.jpg" class="img-responsive center-block" alt="" title="" />
+                                <h2 class="name">Riff Raff</h2>
+                                <h4 class="role">founder</h4>
+                                <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.</p>
+                                <span class="team-social-icon">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 text-center member">
+                                <img src="images/2chainz.jpeg" class="img-responsive center-block" alt="" title="" />
+                                <h2 class="name">2 Chainz</h2>
+                                <h4 class="role">chief technology officer</h4>
+                                <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.</p>
+                                <span class="team-social-icon">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 text-center member">
+                                <img src="images/nene.jpeg" class="img-responsive center-block" alt="" title="" />
+                                <h2 class="name">NeNe Leakes</h2>
+                                <h4 class="role">director of marketing</h4>
+                                <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.</p>
+                                <span class="team-social-icon">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 text-center member">
+                                <img src="images/miley.jpg" class="img-responsive center-block" alt="" title="" />
+                                <h2 class="name">Miley Cyrus</h2>
+                                <h4 class="role">creative director</h4>
+                                <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.</p>
+                                <span class="team-social-icon">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Team Section Ends Here -->
+        
+        <!-- Clients Section Starts Here -->
+        <div class="brand">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="brand-item">
+                            <a href="#"><img alt="01 brand" src="images/logo-nike.svg" alt="" title="" /></a>
+                        </div>
+                        <div class="brand-item">
+                            <a href="#"><img alt="02 brand" src="images/logo-ms.svg" alt="" title="" /></a>
+                        </div>
+                        <div class="brand-item">
+                            <a href="#"><img alt="03 brand" src="images/logo-github.svg" alt="" title="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clients Section Ends Here -->
+{{contact-section}}
+        
+        <!-- Footer Section Starts Here -->
+        <footer class="footer-bg footer paddingbot-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 ftr-block">
+                        <h4>About</h4>
+                        <a href="#">Company</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Press</a>
+                        <a href="#">Engineering</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 ftr-block">
+                        <h4>Team Solutions</h4>
+                        <a href="#">Marketing</a>
+                        <a href="#">Project Management</a>
+                        <a href="#">Managers</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 ftr-block">
+                        <h4>Apps</h4>
+                        <a href="#">Intigrations</a>
+                        <a href="#">iOS</a>
+                        <a href="#">Android</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 ftr-block">
+                        <h4>Support</h4>
+                        <a href="#">Customer Success</a>
+                        <a href="#">Terms &amp; Privacy</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Developers</a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-top-20">
+                        <div class="bdr"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ftr-copy margin-top-10">&copy;2016ember.com</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section Starts Here -->

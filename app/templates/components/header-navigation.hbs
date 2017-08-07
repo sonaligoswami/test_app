@@ -1,0 +1,46 @@
+<!-- Navbar Starts Here -->
+                    <div class="navbar navbar-custom">
+                        <div class="container">
+                            <div class="row">
+                            <!-- Navbar-header Starts Here -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </button>
+                                <!-- Logo Here -->
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="images/header_logo.png" class="img-responsive logo" alt="" title="" />
+                                </a>
+                            </div>
+                            <!-- Navbar-header Ends Here -->
+                            
+                            <!-- Menu Starts Here -->
+                            <div class="navbar-collapse collapse" id="data-scroll-menu" style="padding: 0;">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a {{action "openModal"}}>Pricing</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#services">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Menu Ends Here -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navbar Ends Here -->
+                    
+{{#if isShowingModal}}
+{{#modal-dialog onClose="closeModal" onClickOverlay="openModal"
+targetAttachment="center"
+translucentOverlay=true}}
+<button {{action "closeModal"}} class="btn btn-default pull-right">X</button>
+
+<div class="row">
+		<div class="col-lg-12">
+			<h3> Pricing</h3>
+			<hr/>
+			<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div >
+	</div>
+
+{{/modal-dialog}}
+{{/if}}

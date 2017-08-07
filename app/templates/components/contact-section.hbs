@@ -1,0 +1,85 @@
+
+        <!-- Contact Section Starts Here -->
+        <div class="bg-gray footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <h1>Contact</h1>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                                <p class="sub-title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+            {{#if isShowContacForm}}
+            <form {{action 'submit' on='submit'}}>
+            <div class="form-group">
+               {{input type="text" class="form-control custom-form" placeholder="Name" value=name }}
+              {{#if viewErrors}}
+               <span class="text-danger">{{errors.name}}</span>
+               {{/if}}
+            </div>
+            <div class="form-group">
+               {{input type="text" class="form-control custom-form" placeholder="Email" value=email}}
+               {{#if viewErrors}}
+               <span class="text-danger">{{errors.email}}</span>
+               {{/if}}
+            </div>
+            <div class="form-group">
+               {{input type="text" class="form-control custom-form" placeholder="Subject" value=subject}}
+               {{#if viewErrors}}
+               <span class="text-danger">{{errors.subject}}</span>
+               {{/if}}
+            </div>
+            <div class="form-group">
+               {{textarea type="text" class="form-control custom-form" rows="3" placeholder="Message" value=description}}
+               {{#if viewErrors}}
+               <span class="text-danger">{{errors.description}}</span>
+               {{/if}}
+            </div>
+            <button type="submit" class="btn btn-default btn-form hidden-xs">Submit</button>
+            <div class="text-center">
+               <button type="submit" {{action "submit"}} class="btn btn-default btn-form hidden-sm hidden-md hidden-lg">Send Message</button>
+            </div>
+            </form>    
+            {{/if}}
+            {{#if isShowThankMsg}}
+            <h1>Thank You</h1>
+            <div class="row">
+               <div class="col-md-6 col-sm-8">
+                  <p class="sub-title">
+                     We recieved your message,We will get back to you soon.
+                  </p>
+               </div>
+            </div>
+            {{/if}}
+         </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4 class="ftr-head">Address</h4>
+                        <p class="ftr-text">307 5th Ave, 6th Floor<br>New York, NY 10016</p>
+                        <h4 class="ftr-head">Phone</h4>
+                        <p class="ftr-text">212-222-1234</p>
+                        <h4 class="ftr-head">Fax</h4>
+                        <p class="ftr-text">212-630-7862</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4 class="ftr-head">Email</h4>
+                        <p class="ftr-text">info@ember.com</p>
+                        <h4 class="ftr-head">Connect</h4>
+                        <span>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-vimeo-square fa-2x" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section Ends Here -->
